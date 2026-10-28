@@ -1,0 +1,16 @@
+[package]
+name = "horizon-enchantmenthints"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT"
+description = "Enchantment Hints: a native Horizon mod that explains each enchantment in item tooltips"
+publish = false
+
+[lib]
+# This exact source is also injected as `crate::game::enchantmenthints` by horizon-mixins.
+path = "mixins/enchantmenthints/runtime.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
