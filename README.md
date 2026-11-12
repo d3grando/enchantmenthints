@@ -129,11 +129,9 @@ The mod has no command or tick hook and does not need them. Tooltips are drawn
 only by the window's game, so the window's `native_on` is all it reads, and
 there is no state for a server thread to share.
 
-Pinned: Horizon `142388e1c136e622652ec7505af15d8ad195e041`, horizon-mixins
-`0d6b103c70633d8fd9443d8d0acd3aadaacedb06`, game 26.3. These are the same
-revisions that TreeFall and Mason pin, so all three build into one game:
-`horizon-mixins plan` of the three bundles together succeeds with
-20 injections and 14 modules. No other mod in that set hooks `stack_tooltip`.
+Pinned: Horizon `fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca`, horizon-mixins
+`5a64af938ec86b00d53d16a408aabc0038fb3e57`, game 26.3 (Nightly 2026-11-08). Checked on that commit with `horizon-mixins apply`
+and `cargo check`, alone and together with LookAt, Mouse Tricks and TreeFall. No other mod in that set hooks `stack_tooltip`.
 
 ## Build and try
 
